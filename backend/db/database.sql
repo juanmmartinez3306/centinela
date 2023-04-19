@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS centinela;
+USE centinela;
+CREATE TABLE persona(
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(45) DEFAULT NULL,
+    direccion VARCHAR(45) DEFAULT NULL,
+    Fnacimiento DATE DEFAULT NULL,
+    localidad VARCHAR(45) DEFAULT NULL,
+    genero VARCHAR(10) DEFAULT NULL,
+    fotografia VARCHAR(200) DEFAULT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE usuario(
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    user VARCHAR(20) DEFAULT NULL,
+    password VARCHAR(20) DEFAULT NULL,
+    privilegio TINYINT(5) DEFAULT NULL,
+    PRIMARY KEY (id)
+);
